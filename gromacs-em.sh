@@ -22,7 +22,7 @@ if [ "$COMMAND" == "prepare" ]; then
 
 	gmx grompp -f /command/config.mdp -c ${VARIANT}_solv.gro -p ${VARIANT}.top -o ${VARIANT}.tpr -maxwarn 1
 
-	echo 13 | gmx genion -s ${folder}.tpr -o ${folder}_solv_ions.gro -p ${folder}.top -pname NA -nname CL -neutral 
+	echo 13 | gmx genion -s ${VARIANT}.tpr -o ${VARIANT}_solv_ions.gro -p ${VARIANT}.top -pname NA -nname CL -neutral
 
 	gmx grompp -f /command/config.mdp -c ${VARIANT}_solv_ions.gro -p ${VARIANT}.top -o ${VARIANT}.tpr
 
