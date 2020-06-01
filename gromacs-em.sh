@@ -32,6 +32,6 @@ elif [ "$COMMAND" == "em" ]; then
 
 elif [ "$COMMAND" == "export" ]; then
 
-	echo 1 1 | gmx trjconv -f ${folder}.trr -s ${folder}.tpr -center -o ${folder}_final.pdb
+	echo 1 1 | gmx trjconv -f ${VARIANT}.trr -s ${VARIANT}.tpr -center -o ${VARIANT}_final.pdb
 
 fi
