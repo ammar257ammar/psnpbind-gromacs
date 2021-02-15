@@ -56,12 +56,16 @@ RUN /bin/bash -c "source /usr/local/gromacs/bin/GMXRC"
 
 WORKDIR /command
 COPY gromacs-em.sh ./
-COPY psbap-gromacs-0.0.1-SNAPSHOT-jar-with-dependencies.jar ./
+COPY export-with-ions.sh ./
+COPY neutralize.sh ./
+COPY psnpbind-concurrency-gromacs-1.0-Stable-jar-with-dependencies.jar ./
 COPY config.mdp ./
 
 RUN chmod 755 gromacs-em.sh
-RUN chmod 755 psbap-gromacs-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+RUN chmod 755 export-with-ions.sh
+RUN chmod 755 neutralize.sh
+RUN chmod 755 psnpbind-concurrency-gromacs-1.0-Stable-jar-with-dependencies.jar
 
-ENTRYPOINT ["java", "-jar", "/command/psbap-gromacs-0.0.1-SNAPSHOT-jar-with-dependencies.jar"]
+ENTRYPOINT ["java", "-jar", "/command/psnpbind-concurrency-gromacs-1.0-Stable-jar-with-dependencies.jar"]
 CMD ["-h"]
 

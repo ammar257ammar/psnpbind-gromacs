@@ -1,7 +1,7 @@
 ; ions.mdp - used as input into grompp to generate ions.tpr
 ; Parameters describing what to do, when to stop and what to save
 integrator	= steep		; Algorithm (steep = steepest descent minimization)
-emtol		= 10.0  	; Stop minimization when the maximum force < 1000.0 kJ/mol/nm
+emtol		= 100.0  	; Stop minimization when the maximum force < 100.0 kJ/mol/nm
 emstep          = 0.01      ; Energy step size
 nsteps		= 50000	  	; Maximum number of (minimization) steps to perform
 
@@ -22,5 +22,12 @@ rlist               = 1.2
 
 DispCorr            = No
 pbc		    = xyz 		; Periodic Boundary Conditions (yes/no)
+
+; other cases than CHARMM force fields
+;vdw-modifier             = Potential-shift-Verlet
+;rvdw-switch              = 0 
+;rvdw		    = 1.0		; Short-range Van der Waals cut-off
+;rlist               = 1.0
+;rcoulomb	    = 1.0
 
 

@@ -1,14 +1,14 @@
-# Gromacs Docker
+# PSnpBind Gromacs Docker
 
-This repository is part of the "Pocket SNPs effect on protein-ligand Binding Affinity Prediction (PSBAP)" project and it is a submodule of the main repository 
+This repository is part of the "Pocket SNPs Effect On Protein-Ligand Binding Affinity Project (PSnpBind)" and it is a submodule of the main repository 
 
 https://github.com/ammar257ammar/pocket-snps-effect-binding-affinity
 
-Please prepare and build the docker using the following instruction and refer back to the previous link for proper usage in the context of PSBAP project.
+Please prepare and build the docker using the following instruction and refer back to the previous link for proper usage in the context of PSnpBind project.
 
-### First, clone this repository, then follow next! 
+### First, clone this repository.
 
-### Download Gromacs
+### Second, download Gromacs
 
 1. Download Gromacs version 2019.4 from the following URL:
 
@@ -18,11 +18,11 @@ Please prepare and build the docker using the following instruction and refer ba
 
 3. Make sure the file name is "gromacs-2019.4.tar.gz" since it is needed to build the Docker image.
 
-4. Go to the cloned repository folder "psbap-gromacs" with "cd" command and follow the instructions in the next section
+4. Go to the cloned repository folder "psnpbind-gromacs" with "cd" command and follow the instructions in the next section
 
 ### Build the Docker image
 
-docker build -t psbap-gromacs .
+docker build -t psnpbind-gromacs .
 
 #### Now you are ready! 
 
