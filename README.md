@@ -1,8 +1,12 @@
 # PSnpBind Gromacs Docker
 
-This repository is part of the "Pocket SNPs Effect On Protein-Ligand Binding Affinity Project (PSnpBind)" and it is a submodule of the main repository 
+![GitHub top language](https://img.shields.io/github/languages/top/ammar257ammar/psnpbind-gromacs) ![GitHub](https://img.shields.io/github/license/ammar257ammar/psnpbind-gromacs) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/ammar257ammar/psnpbind-gromacs) [![Dockerhub](https://img.shields.io/badge/Dockerhub-aammar%2Fpsnpbind--gromacs-green)](https://hub.docker.com/r/aammar/psnpbind-gromacs) ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/aammar/psnpbind-gromacs) 
 
-https://github.com/ammar257ammar/pocket-snps-effect-binding-affinity
+This repository prepares Gromacs (for energy minimization) to be executed against multiple PDB structures in paraller as part of constructing the PSnpBind database.
+
+This repository is part of the "Pocket SNPs Effect On Protein-Ligand Binding Affinity Project (PSnpBind)" project and it is a needed to reproduce the work as described in the main repository 
+
+https://github.com/ammar257ammar/PSnpBind-Build
 
 Please prepare and build the docker using the following instruction and refer back to the previous link for proper usage in the context of PSnpBind project.
 
